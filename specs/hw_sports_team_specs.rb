@@ -37,8 +37,7 @@ class TestSportsTeam < MiniTest::Test
 
 def test_win_loss
   sports_team = SportsTeam.new("Edinburgh Haggis Hunters", ["James", "George", "Adam"], "Roderick", 0)
-  
-
+  assert_equal(1, sports_team.win_loss("win"))
 end
 
 

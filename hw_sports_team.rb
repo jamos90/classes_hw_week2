@@ -35,9 +35,13 @@ class SportsTeam
     return @players.include?(player_name)
   end
 
-  def win_loss()
-
+  def win_loss(game_status)
+    return @points +=1 if game_status == "win"
+    return @points -=1 if game_status =="loss"
   end
+
+
+  
 
 
 
