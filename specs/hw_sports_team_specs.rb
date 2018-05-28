@@ -14,8 +14,8 @@ class TestSportsTeam < MiniTest::Test
   end
 
   def test_coach
-      sports_team = SportsTeam.new("Edinburgh Haggis Hunters", ["James", "George", "Adam"], "Roderick", 0)
-      assert_equal("Roderick", sports_team.coach())
+    sports_team = SportsTeam.new("Edinburgh Haggis Hunters", ["James", "George", "Adam"], "Roderick", 0)
+    assert_equal("Roderick", sports_team.coach())
   end
 
   def test_set_coach
@@ -35,12 +35,8 @@ class TestSportsTeam < MiniTest::Test
     assert_equal(true, sports_team.check_players("James"))
   end
 
-def test_win_loss
-  sports_team = SportsTeam.new("Edinburgh Haggis Hunters", ["James", "George", "Adam"], "Roderick", 0)
-  assert_equal(1, sports_team.win_loss("win"))
-end
-
-
-
-
+  def test_win_loss
+    sports_team = SportsTeam.new("Edinburgh Haggis Hunters", ["James", "George", "Adam"], "Roderick", 0)
+    assert_equal(1, sports_team.win_loss("win"))
+  end
 end

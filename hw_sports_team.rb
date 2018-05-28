@@ -39,10 +39,4 @@ class SportsTeam
     return @points +=1 if game_status == "win"
     return @points -=1 if game_status =="loss"
   end
-
-
-  
-
-
-
 end

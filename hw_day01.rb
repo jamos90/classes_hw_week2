@@ -28,8 +28,4 @@ class Student
   def favourite_language()
     return "I love Ruby!"
   end
-
-
-
-
 end
